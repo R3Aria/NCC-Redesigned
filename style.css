@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+:root{
+    --mikado-yellow: hsla(46, 100%, 50%, 1);
+    --tomato: hsla(11, 100%, 65%, 1);
+    --red-ncs: hsla(343, 100%, 39%, 1);
+    --claret: hsla(337, 85%, 31%, 1);
+    --tyrian-purple: hsla(317, 57%, 22%, 1);
+    --lav: lavender;
+    --Audiowide: "Audiowide", sans-serif;
+}
+*{
+    margin: 0;
+    /* background-color: var(--darkmode); */
+    /* color: white; */
+    color: var(--darkmode);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin-inline: auto;
+    overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+
+}
+html{
+    background-color: var(--lav);
+}
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: var(--Audiowide); */
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    /* left:25%; */
+    z-index: 100;
+
+    max-width: 80vw;
+    min-width: 60vw;
+    border-radius: 100rem;
+    height: 3rem;
+    margin-top: 2rem;
+    background-color: #D4d4da;
+    opacity: 0.8;
+
+    overflow: hidden;
+}
+#search{
+    border-radius: 1rem;
+    border: none;
+    padding: .5rem;
+}
+#search:focus{
+    outline: none;
+    border: none;
+}
+.search-bar{
+    justify-content: flex-end;
+    background-color: black;
+}
+.nav-link, .search-bar{
+    color: var(--darkred);
+    padding: 1rem;
+    margin: 0;
+
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: var(--darkred);
+    color: white;
+    text-decoration: none;
+}
+#center-text{
+    text-align: center;
+}
+.center-box{
+    min-width: 65vw;
+    max-width: 65vw;
+    background-color: white;
+    border-radius: 1rem 1rem 0 0;
+    padding: 5rem;
+
+    margin-top: 5rem;
+}
+.slideshow{
+    min-width: 100vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    background-color: var(--grey);
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideshow>img{
+    /* width:span; */
+   filter: blur(2px);
+}
+#carnivalTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carnivalTheme h1{
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    /* backdrop-filter: blur(1px); */
+    /* z-index: 100; */
+
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 1rem 0rem 1rem rgba(0, 0, 0, 0.5);
+}
+#carnivalTheme{
+    width: 100vw;
+    height: 50vh;
+}
+#bg-image{
+    background-image: url(images/Sebucan.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(2px);
+    position: absolute;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    width: 100vw;
+    height: 50vh;
+    z-index: -1;
+}
+
+#aboutNCC, #objectives, #Government-Sites{
+    min-width: 95vw;
+    min-height: 50vh;
+    background-color: var(--lav);
+
+    padding: 2rem;
+    box-shadow: 1px 5px 100px;
+}
+#aboutNCC>h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    font-family: var(--Audiowide);
+}
+#aboutNCC>div>*:is(h2){
+    margin-top: 1rem ;
+}
+#objBackground{
+    background-image: url(images/pages/Home/parralaxImg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(2px);
+    opacity: 0.5;
+
+    height: 40vh;
+    width: 100vw;
+
+    background-attachment: fixed;
+}
+#Government-Sites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Government-Sites > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+li{
+    list-style: square;
+}
+
+footer{
+    
+
+    position: relative;
+    background-image: url(Icons/overlay.svg);
+    fill: red;
+    background-repeat: repeat;
+    background-color: var(--lav);
+    min-height: 35vh;
+    width: 95vw;
+    padding: 2rem 5rem;
+}
+
+#map{
+    position: absolute;
+    bottom: 3rem;
+    right: 5rem;
+}
+#copyright{
+    position: absolute;
+    bottom: 1rem;
+    left: 5rem;
+}
+
+
+/* History of Carnival */
+.card{
+    width: 20rem;
+    height: 30rem;
+    /* background-color: red; */
+    margin: 2rem;
+    border-radius: 1rem;
+
+    position: relative;
+}
+.cardImg{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 15rem;
+    background-color: blue;
+
+    z-index: 1;
+}
+.cardDescription{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 15rem;
+    background-color: green;
+    z-index: 0;
+
+    transition: all 0.5s ease-in-out;
+}
+.card:hover > .cardDescription{
+    background-color: grey;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+#History{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 95vw;
+    min-height: 50vh;
+    background-color: var(--lav);
+    padding: 2rem;
+}
+.center-text{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    font-family: var(--Audiowide);
+}
+.block{
+    display: block;
+    width: 100%;
+}
+.parallax{
+    /* background-image: url(images/pages/Home/parralaxImg-1.png); */
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(2px);
+    position: absolute;
+
+    width: 100vw;
+     height: 50vh;
+    z-index: -1;
+}
+.cardImg{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.8);
+
+}
+.card:hover >.cardImg{
+    filter: brightness(1);
+    transition: all 0.5s ease-in-out;
+}
+#Characters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Characters > .card:nth-child(1) .cardImg{
+    background-image: url(images/pages/History/Stick-Fighters.png) !important;
+
+    transition: all 0.5s ease-in-out;
+}
+#Characters > .card:nth-child(2) .cardImg{
+    background-image: url(images/pages/Home/parralaxImg-1.png) !important;
+
+    transition: all 0.5s ease-in-out;
+}
